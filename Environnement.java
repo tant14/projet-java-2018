@@ -14,12 +14,12 @@ public class Environnement {
 	static final int NB_LIGNE = 100; 
 	static String[][] emploidutemps; 
 	static int[][] eleves;
-	static ArrayList<Matière> liste_mat;
+	static ArrayList<Matiere> liste_mat;
 	
 	public Environnement(){
 		emploidutemps = new String[12][12];	//les valeurs ici sont probablement à changer
 		eleves = new int[NB_LIGNE][NB_COL];
-		liste_mat = new ArrayList<Matière>();
+		liste_mat = new ArrayList<Matiere>();
 	}
 	
 	//lit le fichier etu, rentre les matières
@@ -45,7 +45,7 @@ public class Environnement {
 			if (espace.length >1){	//il y a de legeres differences entre edt et etu... :-(
 				tab[i]=espace[0].concat(espace[1]);
 			}
-			liste_mat.add(new Matière(tab[i]));
+			liste_mat.add(new Matiere(tab[i]));
 		}
 	}
 	
