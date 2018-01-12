@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 
 
-public class Matière {
+public class Matiere {
 	String name;
 	ArrayList<Cours> liste_cours;
-	public Matière (String n){
+	public Matiere (String n){
 		name = n;
 		liste_cours = new ArrayList<Cours>();
 		
